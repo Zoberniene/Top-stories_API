@@ -16,7 +16,7 @@
 
 .heading {
    text-align: center;
-   padding-top: 12%;
+   padding-top: 10%;
    margin-bottom: 3%;
    padding-bottom: 4%;
    font-size: 2.5rem;
@@ -69,20 +69,20 @@ p {
 
    .heading {
       font-size: 3.2rem;
-      padding-top: 10%;
+      padding-top: 7%;
    }
 
    span {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       display: block;
    }
 
    .title {
-      font-size: 2.1rem;
+      font-size: 1.6rem;
    }
 
    p, a {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
    }
 
    img {
@@ -103,6 +103,10 @@ p {
    .container {
       max-width: 1000px;
       margin: 0 auto;
+   }
+
+   .heading {
+      padding-top: 5%;
    }
 
 
