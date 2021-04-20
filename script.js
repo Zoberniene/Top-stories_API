@@ -10,7 +10,7 @@ const fetchStories = async () => {
       const story = stories.results;
       console.log(story);
       story.forEach(article => {
-         const wrapper = document.createElement('div');
+         const wrapper = document.createElement('section');
          const section = document.createElement('span');
          const title = document.createElement('h1');
          const date = document.createElement('span');
