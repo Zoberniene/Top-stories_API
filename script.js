@@ -11,22 +11,25 @@ const fetchStories = async () => {
       console.log(story);
       story.forEach(article => {
          const wrapper = document.createElement('div');
-         const section = document.createElement('h3');
+         const section = document.createElement('span');
          const title = document.createElement('h1');
-         const date = document.createElement('p');
+         const date = document.createElement('span');
          const info = document.createElement('p');
          const link = document.createElement('a');
          const img = document.createElement('img');
 
-         section.innerText = article.section;
+         wrapper.classList.add('wrap');
+         section.innerText = `${article.section} `;
          title.innerText = article.title;
-         date.innerText = article.created_date; //to fix: has to show only date
+         title.classList.add('title');
+         date.innerText = article.published_date.slice(0, 10);
+         date.classList.add('date');
          info.innerText = article.abstract;
          link.href = article.short_url;
          link.innerText = 'Read more...';
          link.target = '_blank';
          img.src = article.multimedia[0].url;
-         wrapper.append(section, title, date, info, link, img);
+         wrapper.append(img, section, date, title, info, link,);
          container.append(wrapper);
 
       })
