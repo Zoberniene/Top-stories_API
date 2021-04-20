@@ -19,7 +19,7 @@ const fetchStories = async () => {
          const img = document.createElement('img');
 
          wrapper.classList.add('wrap');
-         section.innerText = `${article.section} `;
+         section.innerText = `Section: ${article.section} `;
          title.innerText = article.title;
          title.classList.add('title');
          date.innerText = article.published_date.slice(0, 10);
