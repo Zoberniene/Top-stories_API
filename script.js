@@ -4,11 +4,9 @@ const container = document.querySelector('.container');
 const fetchStories = async () => {
 
    try {
-      const res = await fetch('https://api.nytimes.com/svc/topstories/v2/science.json?api-key=3AIFkyzgzgsGVAY81SXXWWkmoKdaNAXB');//pazadas
-      console.log(res);
+      const res = await fetch('https://api.nytimes.com/svc/topstories/v2/science.json?api-key=3AIFkyzgzgsGVAY81SXXWWkmoKdaNAXB');
       const stories = await res.json();
       const story = stories.results;
-      console.log(story);
       story.forEach(article => {
          const wrapper = document.createElement('section');
          const section = document.createElement('span');
